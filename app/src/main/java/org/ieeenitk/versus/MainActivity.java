@@ -15,65 +15,85 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public int count=0;
-    TextView mtextview;
-    TextView mtext;
+    public int count=-1;
+    TextView mtextview, score;
     ProgressBar progressBar;
-    Button button;
+    Button button, next;
     EditText answerText;
-    String[] questions;
-    String[] answers;
+    String[] questions, answers;
+    CountDownTimer cdt = new CountDownTimer(120000, 1) {
+        public void onTick(long millisUntilFinished) {
+            progressBar.setProgress((int)millisUntilFinished);
+        }
+
+        public void onFinish() {
+            Toast.makeText(MainActivity.this, "Time Up!", Toast.LENGTH_SHORT).show();
+            next.setText("Next");
+            button.setVisibility(View.INVISIBLE);
+            next.setVisibility(View.VISIBLE);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (Button) findViewById(R.id.submit);
-        mtext = findViewById(R.id.code);
-        answerText = (EditText) findViewById(R.id.answer);
+        button = findViewById(R.id.submit);
+        score = findViewById(R.id.score);
+        next= findViewById(R.id.next);
+        answerText = findViewById(R.id.answer);
         Intent i = getIntent();
         String leagueID = i.getStringExtra ("LeagueID");
-        mtextview = (TextView) findViewById(R.id.quest);
-        progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+        mtextview = findViewById(R.id.quest);
+        progressBar = findViewById(R.id.progress_bar);
 
         questions = getQuestions(leagueID);
         answers = getAnswers(leagueID);
-        button.setText("Start");
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (answerText.getText().toString().equals(""))
+                    return;
+                if (answerText.getText().toString().equals(answers[count])) {
+                    int scoreVal = progressBar.getProgress() / 1000;
+                    button.setVisibility(View.INVISIBLE);
+                    score.setText("Correct, " + scoreVal + " points!");
+                } else {
+                    Toast.makeText(MainActivity.this, "Incorrect!", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count++;
                 button.setText("Submit");
                 if (count == 0)
                     answerText.setVisibility(View.VISIBLE);
+                    button.setVisibility(View.VISIBLE);
                 if(count<5){
-                    mtextview.setText(questions[count]);
                     nextQuestion();
                 }
                 else{
                     mtextview.setText("Game Over");
                     answerText.setVisibility(View.INVISIBLE);
                     button.setVisibility(View.INVISIBLE);
+                    next.setVisibility(View.INVISIBLE);
                 }
-                count++;
             }
         });
     }
 
-    void nextQuestion(){
-        CountDownTimer cdt = new CountDownTimer(120000, 1) {
-
-            public void onTick(long millisUntilFinished) {
-                progressBar.setProgress((int)millisUntilFinished);
-            }
-
-            public void onFinish() {
-                Toast.makeText(MainActivity.this, "Time Up!", Toast.LENGTH_SHORT).show();
-                nextQuestion();
-            }
-        };
-
+    public void nextQuestion(){
+        progressBar.setVisibility(View.VISIBLE);
+        cdt.cancel();
         // code for updating question and options goes here
-
+        next.setVisibility(View.INVISIBLE);
+        answerText.setText("");
+        mtextview.setText(questions[count]);
+        score.setText("");
         cdt.start();
     }
 

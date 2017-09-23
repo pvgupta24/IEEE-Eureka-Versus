@@ -65,7 +65,7 @@
         </item>
 		<item name="Q2">There are 100 monkeys numbered from 1 to 100 in a test lab. There are also 100 switches numbered from 1 to 100. Each of these monkeys are trained to toggle a switch that is a multiple of the number of the monkey. Assuming that all the switches are off in the beginning, find the number of switches that are on after all 100 monkeys are done toggling the switches.
         </item>
-		<item name="Q3">Solve: 28 + 14 = 50, 36 + 43 = 63, 44 + 52 = ?
+		<item name="Q3">Solve:\n 28 + 14 = 50\n 36 + 43 = 63\n 44 + 52 = ?
         </item>
 		<item name="Q4">What are the number of possible ways to traverse a 5*4 grid. A valid “path” is along the lines made by the columns and rows of the grid.
         </item>
