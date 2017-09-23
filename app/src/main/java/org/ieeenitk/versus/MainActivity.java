@@ -1,19 +1,26 @@
 package org.ieeenitk.versus;
 
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextClock;
 import android.widget.TextView;
 import java.lang.String;
 import android.content.Intent;
+import android.widget.Toast;
+
 public class MainActivity extends AppCompatActivity {
 
     public int count=0;
     TextView mtextview;
     TextView mtext;
+    ProgressBar progressBar;
     Button button;
+    EditText answerText;
     String[] questions;
     String[] answers;
 
@@ -23,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button = (Button) findViewById(R.id.submit);
         mtext = findViewById(R.id.code);
+        answerText = (EditText) findViewById(R.id.answer);
         Intent i = getIntent();
         String leagueID = i.getStringExtra ("LeagueID");
         mtextview = (TextView) findViewById(R.id.quest);
+        progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 
         questions = getQuestions(leagueID);
         answers = getAnswers(leagueID);
@@ -34,16 +43,38 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 button.setText("Submit");
+                if (count == 0)
+                    answerText.setVisibility(View.VISIBLE);
                 if(count<5){
                     mtextview.setText(questions[count]);
+                    nextQuestion();
                 }
                 else{
-                    mtextview.setText("GameOverrr");
-                    button.setEnabled(false);
+                    mtextview.setText("Game Over");
+                    answerText.setVisibility(View.INVISIBLE);
+                    button.setVisibility(View.INVISIBLE);
                 }
                 count++;
             }
         });
+    }
+
+    void nextQuestion(){
+        CountDownTimer cdt = new CountDownTimer(120000, 1) {
+
+            public void onTick(long millisUntilFinished) {
+                progressBar.setProgress((int)millisUntilFinished);
+            }
+
+            public void onFinish() {
+                Toast.makeText(MainActivity.this, "Time Up!", Toast.LENGTH_SHORT).show();
+                nextQuestion();
+            }
+        };
+
+        // code for updating question and options goes here
+
+        cdt.start();
     }
 
     private String[] getAnswers(String leagueID) {
