@@ -52,11 +52,11 @@
 
     <Button
         android:id="@+id/button_instructions"
-        android:layout_width="123dp"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@color/colorAccent"
-        android:text="Instructions"
+        android:text="Format"
         android:textColor="@android:color/background_light"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

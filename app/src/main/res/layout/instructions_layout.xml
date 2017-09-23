@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:id="@+id/textView"
@@ -10,19 +11,33 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
-        android:text="Rules"
-        android:textAllCaps="true" />
+        android:layout_marginTop="20dp"
+        android:text="Format"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editText3"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="none"
-        tools:text="In a League\n each team plays every other team" />
+        android:layout_marginTop="11dp"
+        android:lineSpacingExtra="8sp"
+        android:text="   \u2022 6  Teams  compete  in  each  league.\n
+  \u2022 2 Teams go head to head in each round\n
+      where the first team to answer wins it.\n
+  \u2022 Each  team  plays  1  round  with  every \n
+     other team.\n
+  \u2022 Each  team  gets  the  same  question in  \n
+     a  particular  round.\n\n
+  \u2022 After the 6 rounds, the team at the top of \n
+      the   leaderboard   wins   the   league.
+"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:typeface="sans" />
+
 </RelativeLayout>

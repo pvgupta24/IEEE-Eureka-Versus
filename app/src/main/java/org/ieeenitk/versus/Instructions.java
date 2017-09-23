@@ -22,6 +22,6 @@ public class Instructions extends Activity{
         int width = displayMetrics.widthPixels;
         int height = displayMetrics.heightPixels;
 
-        getWindow().setLayout((int)(width *.75),(int)(height*.6));
+        getWindow().setLayout((int)(width *.85),(int)(height*.6));
     }
 }
