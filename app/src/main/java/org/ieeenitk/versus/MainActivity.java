@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(count==5){
                     mtextview.setText("question5");
-
                 }
                 else{
                     mtextview.setText("GameOverrr");
