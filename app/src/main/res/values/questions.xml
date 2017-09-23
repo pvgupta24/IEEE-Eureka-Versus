@@ -3,9 +3,9 @@
 <resources>
 
 	<string-array name="slot1">
-		<item name="Q1">Fill in the blank:0 = 1 \n 88 = 4 \n 32 = 0\n 10 = 1\n 99 = 2\n 87 = ?
+		<item name="Q1">Fill in the blank:\n0 = 1 \n 88 = 4 \n 32 = 0\n 10 = 1\n 99 = 2\n 87 = ?
 		</item>
-		<item name="Q2">Find a number x such that: x%2 = 1\n x%3 = 2&#8230;x%10 = 9
+		<item name="Q2">Find a number x such that:\n x%2 = 1\n x%3 = 2\n x%10 = 9
 		</item>
 		<item name="Q3">There are 10 ping pong machines that produce an infinite number of ping pong balls. 1 of the machines produces defective balls that weigh 9g instead of the regular 10g. You have an accurate weighing machine that you can only use once and that shows the exact weight of the items placed on it. Find the minimum number of balls that you need to use to find the defective machine.
 		</item>
@@ -41,11 +41,11 @@
     </string-array>
 
 	<string-array name="slot3">
-		<item name="Q1">Complete this! 1 11 21 1211 111221 ?
+		<item name="Q1">Complete this!\n 1 11 21 1211 111221 ?
         </item>
         <item name="Q2">What are the maximum number of pieces one can cut from a cubic block of cheese, with 4 cuts?
         </item>
-		<item name="Q3">Complete this! 2 9 25 49 99 ?
+		<item name="Q3">Complete this!\n 2 9 25 49 99 ?
         </item>
 		<item name="Q4">What was the answer of the second question in this quiz?
         </item>
