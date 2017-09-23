@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string-array id="Question_Set_1">
+		<item name="Q1">Question 1:<br />Fill in the blank: <br />0 = 1<br />88 = 			4<br />
+		32 = 0<br />10 = 1<br />99 = 2<br />87 = ?<br />
+		</item>
+		<item name="Q2">Question 2:<br />Find a number x such that:<br />x%2 = 1<br />
+		x%3 = 2<br />.<br />.<br />x%10 = 9		
+		</item>
+		<item name="Q3">Question 3:<br />There are 10 ping pong machines that produce an infinite number of ping pong balls. 1 of the machines produces defective balls that weigh 9g instead of the regular 10g. You have an accurate weighing machine that you can only use once and that shows the exact weight of the items placed on it. Find the minimum number of balls that you need to use to find the defective machine. <br />
+		</item>
+		<item name="Q4">Question 4:<br />What was the answer of the second question in this quiz?<br />
+		</item>
+		<item name="Q5">Question 5:<br />A wealthy landlord hires a very very skilled “worker” for 7 days to “cook” while his wife was away. The manager because he is very wealthy decides to pay the “worker” with a gold bar. But to ensure that the “worker” does the job properly, he gives the “worker” only 1/7 th of the gold bar after each day. ie After k days, the “worker” should have k/7 th of the gold bar. Find the minimum number of cuts he would need to make on the gold bar to ensure this transaction happens as “quickly” and as “efficiently” as possible.
+                <br /></item>
+	</string-array>
+	
+	<string-array id="Question_Set_2">
+		<item name="Q1"></item>
+		<item name="Q2"></item>
+		<item name="Q3"></item>
+		<item name="Q4"></item>
+		<item name="Q5"></item>
+	</string-array>
+
+	<string-array id="Question_Set_3">
+		<item name="Q1">Question 1:<br />Complete this!<br />1 11 21 1211 111221 ?<br /></item>
+		<item name="Q2">Question 2:<br />What are the maximum number of pieces one can cut from a cubic block of cheese, with 4 cuts?
+                <br /></item>
+		<item name="Q3">Question 3:<br />Complete this!<br />2 9 25 49 99 ?<br /></item>
+		<item name="Q4"><br />Question 4:<br />What was the answer of the second question in this quiz?                			<br /></item>
+		<item name="Q5"><br />Question 5:<br />Four people need to cross a rickety bridge at night. Unfortunately, they have only one torch and the bridge is too dangerous to cross without one. The bridge is only strong enough to support two people at a time. Not all people take the same time to cross the bridge. Times for each person:  1 min, 2 mins, 7 mins and 10 mins. What is the shortest time needed for all four of them to cross the bridge?
+                <br /></item>
+	</string-array>
+
+	<string-array id="Question_Set_4">
+		<item name="Q1"></item>
+		<item name="Q2"></item>
+		<item name="Q3"></item>
+		<item name="Q4"></item>
+		<item name="Q5"></item>
+	</string-array>
+</resources>
