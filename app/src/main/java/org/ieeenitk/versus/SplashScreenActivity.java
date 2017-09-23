@@ -22,5 +22,14 @@ public class SplashScreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        findViewById(R.id.button_instructions).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SplashScreenActivity.this,Instructions.class));
+            }
+        });
+
+
     }
 }
