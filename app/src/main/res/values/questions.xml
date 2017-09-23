@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+<<<<<<< HEAD
+	<string-array id="1">
+=======
 	<string-array id="Question_Set_1">
 		<item name="Q1">Question 1:<br />Fill in the blank: <br />0 = 1<br />88 = 			4<br />
 		32 = 0<br />10 = 1<br />99 = 2<br />87 = ?<br />
@@ -17,12 +20,33 @@
 	</string-array>
 	
 	<string-array id="Question_Set_2">
+>>>>>>> 89077b70be6e088057a1180261ce1367505db112
 		<item name="Q1"></item>
 		<item name="Q2"></item>
 		<item name="Q3"></item>
 		<item name="Q4"></item>
 		<item name="Q5"></item>
 	</string-array>
+<<<<<<< HEAD
+	
+	<string-array id="2">
+		<item name="Q1"><b>Q1 </b><br/>Fill in the blank: <br /> 1 7 5 9 12 0 <br /> 2 6 7 8 11 5 <br /> 4 6 1 7 3 10 <br /> 3 5 14 11 7 11 <br /> 5 8 6 9 1 7 6 <br /> 9 10 8 1 11 12 __ <br /></item>
+
+		<item name="Q2"> How many Knights can you place on a chessboard without any of the Knights attacking one another? 
+
+The <b>knight</b> is a <u>piece</u> in the game of chess, representing a <u>knight</u> (armored cavalry). It is normally represented by a <u>horse's</u> head and neck. It moves to a square that is two squares away horizontally and one square vertically, or two squares vertically and one square horizontally. The complete move therefore looks like the letter L. Unlike all other standard chess pieces, the knight can "jump over" all other pieces (of either color) to its destination square. It captures an enemy piece by replacing it on its square.<br /></item>
+
+		<item name="Q3">There are 81 tennis balls out of which 1 is defective and weighs less than the other 80. You have a weighing scale that accurately tips over to the heavier side. Find the minimum number of times you would need to weigh to find the defective ball.<br /></item>
+		
+		<item name="Q4">1 <b>9 7</b> 8 <br/>
+19 + 78 = 97<br/>
+
+Find the next year that also shows the same property shown above?<br/>    </item>
+		<item name="Q5">What was the answer to question 2?<br/></item>
+	</string-array>
+
+	<string-array id="3">
+=======
 
 	<string-array id="Question_Set_3">
 		<item name="Q1">Question 1:<br />Complete this!<br />1 11 21 1211 111221 ?<br /></item>
@@ -35,10 +59,30 @@
 	</string-array>
 
 	<string-array id="Question_Set_4">
+>>>>>>> 89077b70be6e088057a1180261ce1367505db112
 		<item name="Q1"></item>
 		<item name="Q2"></item>
 		<item name="Q3"></item>
 		<item name="Q4"></item>
 		<item name="Q5"></item>
 	</string-array>
+<<<<<<< HEAD
+
+	<string-array id="4">
+		<item name="Q1">You own <b>25 Horses</b> and you also own a race track on which a <b>maximum of 5 horses</b> can race. You need to find out which of your horses are the fastest but your timer broke. Racing 5 horses at a time and knowing only their positions after each race, find the <b>minimum number of races</b> you need to hold to find your <b>TOP 3 Horses</b>.<br /></item>
+
+
+		<item name="Q2">There are 100 monkeys numbered from 1 to 100 in a test lab. There are also 100 switches numbered from 1 to 100. Each of these monkeys are trained to toggle a switch that is a <b>multiple</b> of the number of the monkey. Assuming that all the switches are off in the beginning, find the number of switches that are on after all 100 monkeys are done toggling the switches.<br /></item>
+
+		<item name="Q3">Solve: <br/>28 + 14 = 50<br/>
+						36 + 43 = 63<br/>
+						44 + 52 = ?<br/>
+										</item>
+
+		<item name="Q4">What are the number of possible ways to traverse a 5*4 grid. A valid “path” is along the lines made by the columns and rows of the grid.<br/></item>
+
+		<item name="Q5">What was the answer to question 1?<br/></item>
+	</string-array>
+=======
+>>>>>>> 89077b70be6e088057a1180261ce1367505db112
 </resources>
