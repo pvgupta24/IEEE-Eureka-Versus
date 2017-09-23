@@ -3,15 +3,15 @@
 <resources>
 
 	<string-array name="slot1">
-		<item name="Q1">Question 1: Fill in the blank:0 = 1 \n 88 = 4 \n 32 = 0, 10 = 1, 99 = 2, 87 = ?
+		<item name="Q1">Fill in the blank:0 = 1 \n 88 = 4 \n 32 = 0\n 10 = 1\n 99 = 2\n 87 = ?
 		</item>
-		<item name="Q2">Question 2: Find a number x such that: x%2 = 1, x%3 = 2&#8230;x%10 = 9
+		<item name="Q2">Find a number x such that: x%2 = 1\n x%3 = 2&#8230;x%10 = 9
 		</item>
-		<item name="Q3">Question 3:There are 10 ping pong machines that produce an infinite number of ping pong balls. 1 of the machines produces defective balls that weigh 9g instead of the regular 10g. You have an accurate weighing machine that you can only use once and that shows the exact weight of the items placed on it. Find the minimum number of balls that you need to use to find the defective machine.
+		<item name="Q3">There are 10 ping pong machines that produce an infinite number of ping pong balls. 1 of the machines produces defective balls that weigh 9g instead of the regular 10g. You have an accurate weighing machine that you can only use once and that shows the exact weight of the items placed on it. Find the minimum number of balls that you need to use to find the defective machine.
 		</item>
-		<item name="Q4">Question 4:What was the answer of the second question in this quiz?
+		<item name="Q4">What was the answer of the second question in this quiz?
 		</item>
-		<item name="Q5">Question 5:A wealthy landlord hires a very skilled “worker” for 7 days to “cook” while his wife was away. The manager because he is very wealthy decides to pay the “worker” with a gold bar. But to ensure that the “worker” does the job properly, he gives the “worker” only 1/7 th of the gold bar after each day. ie After k days, the “worker” should have k/7 th of the gold bar. Find the minimum number of cuts he would need to make on the gold bar to ensure this transaction happens as “quickly” and as “efficiently” as possible.
+		<item name="Q5">A wealthy landlord hires a very skilled “worker” for 7 days to “cook” while his wife was away. The manager because he is very wealthy decides to pay the “worker” with a gold bar. But to ensure that the “worker” does the job properly, he gives the “worker” only 1/7 th of the gold bar after each day. ie After k days, the “worker” should have k/7 th of the gold bar. Find the minimum number of cuts he would need to make on the gold bar to ensure this transaction happens as “quickly” and as “efficiently” as possible.
 		</item>
 	</string-array>
     <string-array name="slot1A">
@@ -23,14 +23,14 @@
     </string-array>
 
     <string-array name="slot2">
-		<item name="Q1">Q1: Fill in the blank: 1 7 5 9 12 0 | 2 6 7 8 11 5 | 4 6 1 7 3 10 | 3 5 14 11 7 11 | 5 8 6 9 1 7 6 | 9 10 8 1 11 12 __
+		<item name="Q1">Fill in the blank:\n 1 7 5 9 12 0\n 2 6 7 8 11 5\n 4 6 1 7 3 10\n 3 5 14 11 7 11\n 5 8 6 9 1 7 6\n 9 10 8 1 11 12 __
 		</item>
-		<item name="Q2">Q2: How many Knights can you place on a chessboard without any of the Knights attacking one another? The knight is a piece in the game of chess, representing a knight (armored cavalry). It is normally represented by a horse's head and neck. It moves to a square that is two squares away horizontally and one square vertically, or two squares vertically and one square horizontally. The complete move therefore looks like the letter L. Unlike all other standard chess pieces, the knight can "jump over" all other pieces (of either color) to its destination square. It captures an enemy piece by replacing it on its square.
+		<item name="Q2">How many Knights can you place on a chessboard without any of the Knights attacking one another? The knight is a piece in the game of chess, representing a knight (armored cavalry). It is normally represented by a horse's head and neck. It moves to a square that is two squares away horizontally and one square vertically, or two squares vertically and one square horizontally. The complete move therefore looks like the letter L. Unlike all other standard chess pieces, the knight can "jump over" all other pieces (of either color) to its destination square. It captures an enemy piece by replacing it on its square.
         </item>
-		<item name="Q3">Q3: There are 81 tennis balls out of which 1 is defective and weighs less than the other 80. You have a weighing scale that accurately tips over to the heavier side. Find the minimum number of times you would need to weigh to find the defective ball.
+		<item name="Q3">There are 81 tennis balls out of which 1 is defective and weighs less than the other 80. You have a weighing scale that accurately tips over to the heavier side. Find the minimum number of times you would need to weigh to find the defective ball.
         </item>
-		<item name="Q4">Q4: 1978 => 19 + 78 = 97. Find the next year that also shows the same property shown above?</item>
-		<item name="Q5">Q5: What was the answer to question 2?</item>
+		<item name="Q4">1978 => 19 + 78 = 97\n Find the next year that also shows the same property shown above?</item>
+		<item name="Q5">What was the answer to question 2?</item>
 	</string-array>
     <string-array name="slot2A">
         <item name="A1">7</item>
@@ -41,15 +41,15 @@
     </string-array>
 
 	<string-array name="slot3">
-		<item name="Q1">Question 1: Complete this! 1 11 21 1211 111221 ?
+		<item name="Q1">Complete this! 1 11 21 1211 111221 ?
         </item>
-        <item name="Q2">Question 2: What are the maximum number of pieces one can cut from a cubic block of cheese, with 4 cuts?
+        <item name="Q2">What are the maximum number of pieces one can cut from a cubic block of cheese, with 4 cuts?
         </item>
-		<item name="Q3">Question 3: Complete this! 2 9 25 49 99 ?
+		<item name="Q3">Complete this! 2 9 25 49 99 ?
         </item>
-		<item name="Q4">Question 4: What was the answer of the second question in this quiz?
+		<item name="Q4">What was the answer of the second question in this quiz?
         </item>
-		<item name="Q5">Question 5: Four people need to cross a rickety bridge at night. Unfortunately, they have only one torch and the bridge is too dangerous to cross without one. The bridge is only strong enough to support two people at a time. Not all people take the same time to cross the bridge. Times for each person:  1 min, 2 mins, 7 mins and 10 mins. What is the shortest time needed for all four of them to cross the bridge?
+		<item name="Q5">Four people need to cross a rickety bridge at night. Unfortunately, they have only one torch and the bridge is too dangerous to cross without one. The bridge is only strong enough to support two people at a time. Not all people take the same time to cross the bridge. Times for each person:  1 min, 2 mins, 7 mins and 10 mins. What is the shortest time needed for all four of them to cross the bridge?
         </item>
 	</string-array>
     <string-array name="slot3A">
@@ -71,7 +71,7 @@
         </item>
 		<item name="Q5">What was the answer to question 1?</item>
 	</string-array>
-    <string-array name="slot5A">
+    <string-array name="slot4A">
         <item name="A1">7</item>
         <item name="A2">10</item>
         <item name="A3">54</item>

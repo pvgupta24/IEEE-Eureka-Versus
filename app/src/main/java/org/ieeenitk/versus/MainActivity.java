@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mtext;
     Button button;
     String[] questions;
+    String[] answers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mtextview=(TextView) findViewById(R.id.quest);
 
         questions = getQuestions(leagueID);
-
+        answers = getAnswers(leagueID);
         button.setText("Start");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +47,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private String[] getAnswers(String leagueID) {
+        String[] qs;
+        switch (leagueID) {
+            case "slot1":
+                qs = getResources().getStringArray(R.array.slot1A);
+                break;
+            case "slot2":
+                qs = getResources().getStringArray(R.array.slot2A);
+                break;
+            case "slot3":
+                qs = getResources().getStringArray(R.array.slot3A);
+                break;
+            case "slot4":
+                qs = getResources().getStringArray(R.array.slot4A);
+                break;
+            default:
+                qs = new String[5];
+        }
+        return qs;
+    }
+
     private String[] getQuestions(String leagueID) {
         String[] qs;
         switch (leagueID) {
@@ -53,13 +75,13 @@ public class MainActivity extends AppCompatActivity {
                 qs = getResources().getStringArray(R.array.slot1);
                 break;
             case "slot2":
-                qs = getResources().getStringArray(R.array.slot1);
+                qs = getResources().getStringArray(R.array.slot2);
                 break;
             case "slot3":
-                qs = getResources().getStringArray(R.array.slot1);
+                qs = getResources().getStringArray(R.array.slot3);
                 break;
             case "slot4":
-                qs = getResources().getStringArray(R.array.slot1);
+                qs = getResources().getStringArray(R.array.slot4);
                 break;
             default:
                 qs = new String[5];
