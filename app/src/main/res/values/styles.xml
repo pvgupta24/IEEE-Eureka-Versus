@@ -17,4 +17,9 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
+    <style name="AppTheme.InstructionTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
 </resources>
