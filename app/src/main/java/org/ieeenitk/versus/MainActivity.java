@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button=(Button) findViewById(R.id.submit);
-        mtext=findViewById(R.id.code);
+        button = (Button) findViewById(R.id.submit);
+        mtext = findViewById(R.id.code);
         Intent i = getIntent();
         String leagueID = i.getStringExtra ("LeagueID");
-        mtextview=(TextView) findViewById(R.id.quest);
+        mtextview = (TextView) findViewById(R.id.quest);
 
         questions = getQuestions(leagueID);
         answers = getAnswers(leagueID);
@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 count++;
             }
         });
-
     }
 
     private String[] getAnswers(String leagueID) {
@@ -86,9 +85,6 @@ public class MainActivity extends AppCompatActivity {
             default:
                 qs = new String[5];
         }
-
         return qs;
     }
-
-
 }
