@@ -20,6 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                 intent.putExtra("LeagueID", id);
                 startActivity(intent);
+                finish();
             }
         });
     }

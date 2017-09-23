@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     TextView mtextview;
     TextView mtext;
     Button button;
+    String[] questions;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,37 +23,49 @@ public class MainActivity extends AppCompatActivity {
         button=(Button) findViewById(R.id.submit);
         mtext=findViewById(R.id.code);
         Intent i = getIntent();
-        String textval = i.getStringExtra ("LeagueID");
+        String leagueID = i.getStringExtra ("LeagueID");
         mtextview=(TextView) findViewById(R.id.quest);
+
+        questions = getQuestions(leagueID);
+
         button.setText("Start");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 button.setText("Submit");
-                count++;
-                if(count==1){
-                    mtextview.setText("What is the bleh bleh bleh");
-                }
-                else if(count==2){
-                    mtextview.setText("Question two");
-                }
-                else if(count==3){
-                    mtextview.setText("gdhhdh");
-                }
-                else if(count==4){
-                    mtextview.setText("question 4");
-                }
-                else if(count==5){
-                    mtextview.setText("question5");
-
+                if(count<5){
+                    mtextview.setText(questions[count]);
                 }
                 else{
                     mtextview.setText("GameOverrr");
-                    button.setVisibility(View.INVISIBLE);
+                    button.setEnabled(false);
                 }
+                count++;
             }
         });
 
+    }
+
+    private String[] getQuestions(String leagueID) {
+        String[] qs;
+        switch (leagueID) {
+            case "slot1":
+                qs = getResources().getStringArray(R.array.slot1);
+                break;
+            case "slot2":
+                qs = getResources().getStringArray(R.array.slot1);
+                break;
+            case "slot3":
+                qs = getResources().getStringArray(R.array.slot1);
+                break;
+            case "slot4":
+                qs = getResources().getStringArray(R.array.slot1);
+                break;
+            default:
+                qs = new String[5];
+        }
+
+        return qs;
     }
 
 

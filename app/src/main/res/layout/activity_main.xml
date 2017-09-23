@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,27 +9,36 @@
     tools:context="org.ieeenitk.versus.MainActivity">
 
     <TextView
-        android:layout_width="300dp"
-        android:background="@color/colorBack"
-        android:layout_height="300dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/quest"
+        android:textSize="18sp"
+        android:text="GET READY!"
         app:layout_constraintTop_toTopOf="parent" />
-    <Button
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/submit"
+        android:textColorHint="@color/colorAccent"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="50dp"
         android:id="@+id/submit"
         android:background="@color/colorAccent"
-        android:text="SUBMIT" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@android:color/background_light"
+        android:text="SUBMIT"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintHorizontal_bias="0.487" />
 
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
