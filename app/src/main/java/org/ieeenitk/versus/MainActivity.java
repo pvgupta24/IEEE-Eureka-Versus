@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button button, next;
     EditText answerText;
     String[] questions, answers;
-    CountDownTimer cdt = new CountDownTimer(120000, 1) {
+    CountDownTimer cdt = new CountDownTimer(180000, 1) {
         public void onTick(long millisUntilFinished) {
             progressBar.setProgress((int)millisUntilFinished);
         }
