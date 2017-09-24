@@ -5,11 +5,11 @@
 	<string-array name="slot1">
 		<item name="Q1">Fill in the blank:\n0 = 1 \n 88 = 4 \n 32 = 0\n 10 = 1\n 99 = 2\n 87 = ?
 		</item>
-		<item name="Q2">Find a number x such that:\n x%2 = 1\n x%3 = 2\n x%10 = 9
+		<item name="Q2">Find the smallest number x such that:\n x%2 = 1\n x%3 = 2\n.\n.\n.\n x%10 = 9
 		</item>
-		<item name="Q3">There are 10 ping pong machines that produce an infinite number of ping pong balls. 1 of the machines produces defective balls that weigh 9g instead of the regular 10g. You have an accurate weighing machine that you can only use once and that shows the exact weight of the items placed on it. Find the minimum number of balls that you need to use to find the defective machine.
+		<item name="Q3">There are 10 ping pong machines that produce an infinite number of ping pong balls. 1 of the machines produces defective balls that weigh 9g instead of the regular 10g. You have an accurate weighing machine that you can only use once and that shows the exact weight of the items placed on it. Find the minimum number of balls that you need to use to find the defective ping-pong machine.
 		</item>
-		<item name="Q4">What was the answer of the second question in this quiz?
+		<item name="Q4">A fast food restaurant sells chicken in orders of 6, 9 and 20.What is the largest number of chicken pieces that you cannot order from this restaurant?
 		</item>
 		<item name="Q5">A wealthy landlord hires a very skilled “worker” for 7 days to “cook” while his wife was away. The manager because he is very wealthy decides to pay the “worker” with a gold bar. But to ensure that the “worker” does the job properly, he gives the “worker” only 1/7 th of the gold bar after each day. ie After k days, the “worker” should have k/7 th of the gold bar. Find the minimum number of cuts he would need to make on the gold bar to ensure this transaction happens as “quickly” and as “efficiently” as possible.
 		</item>
@@ -18,7 +18,7 @@
         <item name="A1">2</item>
         <item name="A2">2519</item>
         <item name="A3">45</item>
-        <item name="A4">2519</item>
+        <item name="A4">43</item>
         <item name="A5">2</item>
     </string-array>
 
@@ -30,14 +30,14 @@
 		<item name="Q3">There are 81 tennis balls out of which 1 is defective and weighs less than the other 80. You have a weighing scale that accurately tips over to the heavier side. Find the minimum number of times you would need to weigh to find the defective ball.
         </item>
 		<item name="Q4">1978 => 19 + 78 = 97\n Find the next year that also shows the same property shown above?</item>
-		<item name="Q5">What was the answer to question 2?</item>
+		<item name="Q5">There are 10 ping pong machines that produce an infinite number of ping pong balls. 1 of the machines produces defective balls that weigh 9g instead of the regular 10g. You have an accurate weighing machine that you can only use once and that shows the exact weight of the items placed on it. Find the minimum number of balls that you need to use to find the defective ping-pong machine.</item>
 	</string-array>
     <string-array name="slot2A">
         <item name="A1">7</item>
         <item name="A2">32</item>
         <item name="A3">6</item>
         <item name="A4">2307</item>
-        <item name="A5">32</item>
+        <item name="A5">45</item>
     </string-array>
 
 	<string-array name="slot3">
@@ -47,7 +47,7 @@
         </item>
 		<item name="Q3">Complete this!\n 2 9 25 49 99 ?
         </item>
-		<item name="Q4">What was the answer of the second question in this quiz?
+		<item name="Q4">You own 25 Horses and you also own a race track on which a maximum of 5 horses can race. You need to find out which of your horses are the fastest but your timer broke. Racing 5 horses at a time and knowing only their positions after each race, find the minimum number of races you need to hold to find your TOP 3 Horses.
         </item>
 		<item name="Q5">Four people need to cross a rickety bridge at night. Unfortunately, they have only one torch and the bridge is too dangerous to cross without one. The bridge is only strong enough to support two people at a time. Not all people take the same time to cross the bridge. Times for each person:  1 min, 2 mins, 7 mins and 10 mins. What is the shortest time needed for all four of them to cross the bridge?
         </item>
@@ -56,7 +56,7 @@
         <item name="A1">312211</item>
         <item name="A2">15</item>
         <item name="A3">143</item>
-        <item name="A4">15</item>
+        <item name="A4">7</item>
         <item name="A5">17</item>
     </string-array>
 
@@ -69,13 +69,13 @@
         </item>
 		<item name="Q4">What are the number of possible ways to traverse a 5*4 grid. A valid “path” is along the lines made by the columns and rows of the grid.
         </item>
-		<item name="Q5">What was the answer to question 1?</item>
+		<item name="Q5">What was the answer to question 3?</item>
 	</string-array>
     <string-array name="slot4A">
         <item name="A1">7</item>
         <item name="A2">10</item>
         <item name="A3">54</item>
         <item name="A4">126</item>
-        <item name="A5">7</item>
+        <item name="A5">54</item>
     </string-array>
 </resources>
